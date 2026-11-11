@@ -1,0 +1,121 @@
+:root {
+    --bg-color: #132a0f;
+    --panel-bg: #1e3b28;
+    --text-color: #f8fafc;
+    --accent-color: #72f1a9;
+    --accent-hover: #5dbe92;
+    --border-color: #335537;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--accent-color);
+}
+
+header p {
+    color: #94a3b8;
+    margin-top: 5px;
+}
+
+.workspace {
+    display: flex;
+    gap: 20px;
+    background-color: var(--panel-bg);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.canvas-container {
+    background-color: #09160f;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+}
+
+canvas {
+    display: block;
+}
+
+.controls-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.controls-panel h2 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.control-group label {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: var(--accent-color);
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: #0f2a18;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-hover);
+}
+
+.btn-active {
+    background-color: #ef4444;
+    color: white;
+}
+.select-figura {
+    width: 100%;
+    padding: 10px;
+    background-color: #0f2a11;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+}

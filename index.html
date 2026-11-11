@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador 3D - Múltiples Primitivas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Visualizador 3D: Primitivas Geométricas</h1>
+            <p>Práctica de Computación Gráfica - Sistemas Computacionales</p>
+        </header>
+
+        <main class="workspace">
+            <div class="canvas-container">
+                <canvas id="canvas3d" width="600" height="600"></canvas>
+            </div>
+            
+            <div class="controls-panel">
+                <h2>Controles y Geometría</h2>
+                
+                <div class="control-group">
+                    <label for="selectorFigura">Seleccionar Figura:</label>
+                    <select id="selectorFigura" class="select-figura">
+                        <option value="cubo">Cubo </option>
+                        <option value="piramide">Opción A: Pirámide (5v, 8a)</option>
+                        <option value="prisma">Opción B: Prisma Triangular (6v, 9a)</option>
+                        <option value="octaedro">Opción C: Octaedro (6v, 12a)</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <button id="btnAutoRotacion" class="btn-primary">Iniciar Auto-Rotación (Y)</button>
+                </div>
+
+                <div class="control-group">
+                    <label for="rotX">Rotación X: <span id="valRotX">0</span>°</label>
+                    <input type="range" id="rotX" min="-180" max="180" value="0">
+                </div>
+
+                <div class="control-group">
+                    <label for="rotY">Rotación Y: <span id="valRotY">0</span>°</label>
+                    <input type="range" id="rotY" min="-180" max="180" value="0">
+                </div>
+
+                <div class="control-group">
+                    <label for="rotZ">Rotación Z: <span id="valRotZ">0</span>°</label>
+                    <input type="range" id="rotZ" min="-180" max="180" value="0">
+                </div>
+
+                <div class="control-group">
+                    <label for="escala">Escala: <span id="valEscala">1</span>x</label>
+                    <input type="range" id="escala" min="0.2" max="3" step="0.1" value="1">
+                </div>
+
+                <div class="control-group">
+                    <label for="transZ">Profundidad (Translación Z): <span id="valTransZ">0</span></label>
+                    <input type="range" id="transZ" min="-300" max="300" value="0">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
